@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <title>Reddit</title>
+</head>
+<body>
+<nav>
+    <a href="./index.html" id="reddit_logo">
+        <img src="img/reddit_logo.png" alt="reddit logo">
+        <img src="img/reddit.png" alt="reddit" id="reddit">
+    </a>
+    <button id="nav_home" class="selector_buttons dark_without_hover">
+        <span class="with_icon"><i class="material-icons icon_light_grey">home</i><span>Accueil</span></span>
+        <i class="material-icons icon_dark_grey">expand_more</i>
+    </button>
+    <div id="nav_searchbar">
+        <i class="material-icons icon_dark_grey">search</i>
+        <input type="text" placeholder="Search Reddit"/>
+    </div>
+    <div id="nav_icons">
+        <a href="#" class="hiden_when_small">
+            <button class="button_squared dark"><i class="material-icons-outlined icon_light_grey">outbound</i></button>
+        </a>
+        <a href="#">
+            <button class="button_squared dark"><i class="material-icons-outlined icon_light_grey">monetization_on</i>
+            </button>
+        </a>
+        <a href="#" class="hiden_when_small">
+            <button class="button_squared dark"><i class="material-icons-outlined icon_light_grey">sms</i></button>
+        </a>
+        <a href="#">
+            <button class="button_squared dark"><i class="material-icons-outlined icon_light_grey">notifications</i>
+            </button>
+        </a>
+        <a href="#">
+            <button class="button_squared dark"><i class="material-icons icon_light_grey">add</i></button>
+        </a>
+        <button id="nav_ads" class="button_rounded light with_icon">
+            <i class="material-icons-outlined">campaign</i>Publicités
+        </button>
+    </div>
+    <button id="nav_profile" class="selector_buttons dark_without_hover">
+        <span><img src="img/perso.png" alt="avatar" class="avatars"><span>Adelfar</span></span>
+        <i class="material-icons icon_dark_grey">expand_more</i>
+    </button>
+</nav>
+
+<main>
+    <div id="content">
+        <div id="center">
+            <section id="publish" class="round_border">
+                <img src="img/perso_grand.png" alt="avatar" class="avatars">
+                <input type="text" placeholder="Créer une publication">
+                <button class="button_squared dark"><i class="material-icons-outlined icon_dark_grey">wallpaper</i>
+                </button>
+                <button class="button_squared dark"><i class="material-icons icon_dark_grey">attach_file</i></button>
+            </section>
+            <section id="browse" class="round_border">
+                <button class="button_rounded light with_icon"><i class="material-icons icon_light_grey">rocket</i>Meilleures
+                </button>
+                <button class="button_rounded dark with_icon hidden_when_xsmall"><i
+                        class="material-icons-outlined icon_dark_grey">local_fire_department</i>Populaires
+                </button>
+                <button class="button_rounded dark with_icon hidden_when_xsmall"><i
+                        class="material-icons icon_dark_grey">brightness_5</i>Nouvelles
+                </button>
+                <button class="button_rounded dark with_icon hidden_when_xsmall"><i
+                        class="material-icons icon_dark_grey">trending_up</i>Au
+                    top</span>
+                </button>
+                <button class="button_rounded dark with_icon hidden_when_xsmall"><i
+                        class="material-icons icon_dark_grey">more_horiz</i>
+                </button>
+                <button class="button_rounded dark with_icon"><i class="material-icons-outlined icon_dark_grey">sensor_window</i><i
+                        class="material-icons icon_dark_grey">expand_more</i></button>
+            </section>
+            <section id="articles">
+                <article class="round_border">
+                    <div class="points">
+                        <button class="point_button">
+                            <i class="material-icons-outlined icon_dark_grey plus_point">keyboard_double_arrow_up</i>
+                        </button>
+                        <p><b>49</b></p>
+                        <button class="point_button">
+                            <i class="material-icons-outlined icon_dark_grey minus_point">keyboard_double_arrow_down</i>
+                        </button>
+                    </div>
+                    <div class="article">
+                        <a href="https://www.reddit.com/r/Fedora/comments/yddwpk/kde_plasma_or_gnome/">
+                            <div class="article_header">
+                                <img src="img/fedora.png" alt="fedora" class="article_header_img"><span
+                                    class="article_header_group">r/Fedora</span><span class="article_header_user_date"> - publiée par u/Braydon644 il y a 15 heures</span>
+                            </div>
+                            <h3>KDE Plasma or Gnome</h3>
+                            <div class="article_text">
+                                <p>I used Fedora on two laptops: one is a spin with KDE Plasma and the other is running
+                                    GNOME
+                                    42.</p>
+                                <p>I love the features that Plasma has to offer, but I find it overall to be less stable
+                                    and
+                                    more buggy (especially on Wayland) than I find GNOME to be.</p>
+                                <p>So for the people who use either Plasma or GNOME, I guess my question is why you
+                                    chose
+                                    one over the other and if you think Plasma is buggy or if you think that GNOME is
+                                    too
+                                    limiting.</p>
+                            </div>
+                        </a>
+                        <div class="article_footer">
+                            <a href="https://www.reddit.com/r/Fedora/comments/yddwpk/kde_plasma_or_gnome/">
+                                <button class="button_squared dark with_icon"><i class="material-icons-outlined">chat_bubble_outline</i>111
+                                    Commentaires
+                                </button>
+                            </a>
+                            <button class="button_squared dark with_icon hidden_when_xsmall"><i
+                                    class="material-icons-outlined">redeem</i>Récompenses
+                            </button>
+                            <button class="button_squared dark with_icon hidden_when_xsmall"><i
+                                    class="material-icons-outlined">shortcut</i>Partager
+                            </button>
+                            <button class="button_squared dark with_icon hidden_when_xsmall"><i
+                                    class="material-icons-outlined">turned_in_not</i>Sauvegarder
+                            </button>
+                            <button class="button_squared dark with_icon"><i
+                                    class="material-icons-outlined">more_horiz</i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+                <article class="round_border">
+                    <div class="points">
+                        <button class="point_button">
+                            <i class="material-icons-outlined icon_dark_grey plus_point">keyboard_double_arrow_up</i>
+                        </button>
+                        <p><b>0</b></p>
+                        <button class="point_button">
+                            <i class="material-icons-outlined icon_dark_grey minus_point">keyboard_double_arrow_down</i>
+                        </button>
+                    </div>
+                    <div class="article">
+                        <a href="https://www.reddit.com/r/rust/comments/ydbap1/what_does_it_take_to_selfhost_rust/">
+                            <div class="article_header">
+                                <img src="img/rust.png" alt="rust" class="article_header_img"><span
+                                    class="article_header_group">r/rust</span><span class="article_header_user_date"> - publiée par u/insomnichill il y a 17 heures</span>
+                            </div>
+                            <h3>What does it take to selfhost Rust</h3>
+                            <div class="article_text">
+                                <p> Hi! Zig is now selfhosted. What does it take to selfhost Rust?</p>
+                                <a href="https://kristoff.it/blog/zig-self-hosted-now-what/">https://kristoff.it/blog/zig-self-hosted-now-what/</a>
+                            </div>
+                        </a>
+                        <div class="article_footer">
+                            <a href="https://www.reddit.com/r/rust/comments/ydbap1/what_does_it_take_to_selfhost_rust/">
+                                <button class="button_squared dark with_icon"><i class="material-icons-outlined">chat_bubble_outline</i>15
+                                    Commentaires
+                                </button>
+                            </a>
+                            <button class="button_squared dark with_icon hidden_when_xsmall"><i
+                                    class="material-icons-outlined">redeem</i>Récompenses
+                            </button>
+                            <button class="button_squared dark with_icon hidden_when_xsmall"><i
+                                    class="material-icons-outlined">shortcut</i>Partager
+                            </button>
+                            <button class="button_squared dark with_icon hidden_when_xsmall"><i
+                                    class="material-icons-outlined">turned_in_not</i>Sauvegarder
+                            </button>
+                            <button class="button_squared dark with_icon"><i
+                                    class="material-icons-outlined">more_horiz</i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="round_border">
+                    <div class="points">
+                        <button class="point_button">
+                            <i class="material-icons-outlined icon_dark_grey plus_point">keyboard_double_arrow_up</i>
+                        </button>
+                        <p><b>6.8k</b></p>
+                        <button class="point_button">
+                            <i class="material-icons-outlined icon_dark_grey minus_point">keyboard_double_arrow_down</i>
+                        </button>
+                    </div>
+                    <div class="article">
+                        <a href="https://www.reddit.com/r/ProgrammerHumor/comments/ydhg1f/that_is_not_how_it_is_supposed_to_be_used/">
+                            <div class="article_header">
+                                <img src="img/humor.png" alt="rust" class="article_header_img"><span
+                                    class="article_header_group">r/ProgrammerHumor</span><span
+                                    class="article_header_user_date"> - publiée par u/cortemptas il y a 12 heures</span>
+                            </div>
+                            <h3>That is not how it is supposed to be used</h3>
+                            <div class="article_text">
+                                <div class="article_img">
+                                    <img src="img/ad.png" alt="ad">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="article_footer">
+                            <a href="https://www.reddit.com/r/ProgrammerHumor/comments/ydhg1f/that_is_not_how_it_is_supposed_to_be_used/">
+                                <button class="button_squared dark with_icon"><i class="material-icons-outlined">chat_bubble_outline</i>15
+                                    Commentaires
+                                </button>
+                            </a>
+                            <button class="button_squared dark with_icon hidden_when_xsmall"><i
+                                    class="material-icons-outlined">redeem</i>Récompenses
+                            </button>
+                            <button class="button_squared dark with_icon hidden_when_xsmall"><i
+                                    class="material-icons-outlined">shortcut</i>Partager
+                            </button>
+                            <button class="button_squared dark with_icon hidden_when_xsmall"><i
+                                    class="material-icons-outlined">turned_in_not</i>Sauvegarder
+                            </button>
+                            <button class="button_squared dark with_icon"><i
+                                    class="material-icons-outlined">more_horiz</i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <aside>
+            <section id="trending" class="round_border">
+                <img src="img/commu.png" alt="communaute">
+                <div id="trending_list">
+                    <div class="trending_item">
+                        <span class="trending_item_number">1</span>
+                        <i class="material-icons icon_green">expand_less</i>
+                        <img class="top_icons" src="img/steam.png" alt="steam">
+                        <span class="trending_group">r/Steam</span>
+                        <div class="trending_item_join">
+                            <button class="button_classic_small white">Rejoindre</button>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <span class="trending_item_number">2</span>
+                        <i class="material-icons icon_green">expand_less</i>
+                        <img class="top_icons" src="img/lol.png" alt="lol">
+                        <span class="trending_group">r/leagueof...</span>
+                        <div class="trending_item_join">
+                            <button class="button_classic_small white">Rejoindre</button>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <span class="trending_item_number">3</span>
+                        <i class="material-icons icon_green">expand_less</i>
+                        <img class="top_icons" src="img/stardew.png" alt="stardew">
+                        <span class="trending_group">r/StarDewV...</span>
+                        <div class="trending_item_join">
+                            <button class="button_classic_small white">Rejoindre</button>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <span class="trending_item_number">4</span>
+                        <i class="material-icons icon_green">expand_less</i>
+                        <img class="top_icons" src="img/yugi.png" alt="yugioh">
+                        <span class="trending_group">r/yugioh</span>
+                        <div class="trending_item_join">
+                            <button class="button_classic_small white">Rejoindre</button>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <span class="trending_item_number">5</span>
+                        <i class="material-icons icon_green">expand_less</i>
+                        <img class="top_icons" src="img/dnd.png" alt="dnd">
+                        <span class="trending_group">r/dndnext</span>
+                        <div class="trending_item_join">
+                            <button class="button_classic_small white">Rejoindre</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="trending_button">
+                    <a href="https://www.reddit.com/subreddits/leaderboard/games/">
+                        <button class="button_classic_large white">Voir tout</button>
+                    </a></div>
+                <div id="tags">
+                    <a href="https://www.reddit.com/subreddits/leaderboard/">
+                        <button class="tags blue">Au top</button>
+                    </a>
+                    <a href="https://www.reddit.com/subreddits/leaderboard/near-you/">
+                        <button class="tags blue">Près de vous</button>
+                    </a>
+                    <a href="https://www.reddit.com/subreddits/leaderboard/gaming/">
+                        <button class="tags blue">Gaming</button>
+                    </a>
+                    <a href="https://www.reddit.com/subreddits/leaderboard/news/">
+                        <button class="tags blue">Actualités</button>
+                    </a>
+                </div>
+            </section>
+            <section id="premium" class="round_border">
+                <div id="premium_content">
+                    <i class="material-icons-outlined icon_orange">security</i>
+                    <div id="premium_text">
+                        <h4>Reddit Premium</h4>
+                        <p>Une expérience Reddit enrichie, avec des pièces chaque mois</p>
+                    </div>
+                </div>
+                <div id="premium_button">
+                    <a href="https://www.reddit.com/premium">
+                        <button class="button_classic_large orange">Essayer maintenant</button>
+                    </a>
+                </div>
+            </section>
+            <section id="home" class="round_border">
+                <img src="img/banniere_planetes.png" alt="planetes">
+                <div id="home_content">
+                    <div id="home_title">
+                        <img src="img/snoo_home.png" alt="snoo">
+                        <span><h3>Accueil</h3></span>
+                    </div>
+                    <p id="home_text">
+                        Votre page d'accueil personnelle Reddit.<br>
+                        Venez ici pour consulter vos communautés préférées.
+                    </p>
+                    <hr>
+                    <div id="home_buttons">
+                        <a href="https://www.reddit.com/submit">
+                            <button class="button_classic_large white">Créer une publication</button>
+                        </a>
+                        <button class="button_classic_large black">Créer une communauté</button>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+</main>
+</body>
+<script src="js/script.js"></script>
+</html>
